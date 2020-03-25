@@ -42,9 +42,6 @@ Svaka osoba dobija informacije u zavisnosti od toga koji je tip korisnika. Na os
   - Praćenje sastava laboratorijskih grupa
   - Kreiranje opisa predavanja i vježbi sa posebnim napomenama ako vježba zahtijeva pripremu, ako je potrebna pročitati određene materijale prije vježbe i slično.
 
-Aplikacija ima mogucnost praćenja prisustva pomoću QR kodova koji se prikazuju na predavanju/vježbama.
-
-Aplikacija posjeduje Google Maps integraciju da bi se pratila lokacija predavanja.
 ### Administrator
 Osoba zadužena za održavanje aplikacije i dodjele predmeta profesorima
 - Dodjela predmeta profesorima
