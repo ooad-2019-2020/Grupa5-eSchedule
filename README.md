@@ -27,9 +27,10 @@ Svaka osoba dobija informacije u zavisnosti od toga koji je tip korisnika. Na os
 - Mogućnost odabir laboratorijskih grupa ako ista nije popunjena
 - Mogućnost slanja zahtjeva za zamjenu grupe drugim studentima
 - Dobijanje notifikacija vezane za predmete koje student trenutno sluša
+- Upisivanje na predmet koji student sluša
 
 ### Nastavno osoblje
-- Informacije o vremenu:
+- Informacije o vremenu i lokaciji:
   - Predavanja
   - Vježbi
   - Ispita
