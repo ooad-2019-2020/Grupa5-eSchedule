@@ -59,7 +59,15 @@ Osoba zadužena za održavanje aplikacije i dodjele predmeta profesorima
 - Google maps integracija za praćenje lokacije
 - Kreiranje algoritma za stvaranje rasporeda koji uzima sve ili većinu faktora u obzir pri stvaranju prototipskih verzija rasporeda
 -------------------------------------------------------------------------------
+## Akteri
+- Student
+- Nastavno osoblje
+  - Profesor
+  - Asistent
+  - Demonstrator
+- Administrator
 
+---------------------------------
 Aplikacija je autentična i isključivo plod mašte tima "Kontrola magičnih sistema".
 
 Kontrola magičnih sistema
