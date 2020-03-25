@@ -2,7 +2,6 @@
 Tema: raspored
 
 ## Tim "Kontrola Magičnih sistema"
------
 Članovi tima:
 - Kenan Omić
 - Seid Korać
