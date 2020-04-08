@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+<style>
+    .forma {
+        width: fit-content;
+    }
+</style>
+</head>
+<body>
+
+
+    <div class="forma container mt-5 p-5 rounded shadow-lg">
+        
+        <h2 class="text-center">
+            Kreiranje predmeta
+        </h2>
+
+        <form action="" class="mt-3">
+            <!-- Ime -->
+            <div class="form-group">
+                <label for="imePredmeta">Naziv Predmeta</label>
+                <input type="text" name="imePredmeta" id="imePredmeta" class="form-control">
+            </div>
+            <!-- Smjer -->
+            <div class="form-group">
+
+                <span>Smjer    </span>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">RI</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">AiE</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                    <label class="form-check-label" for="inlineRadio2">TK</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                    <label class="form-check-label" for="inlineRadio2">EE</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                    <label class="form-check-label" for="inlineRadio2">RS</label>
+                </div>
+            </div>
+            <!-- Godina -->
+            <div class="form-group">                
+                <span>Godina</span>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="godina" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="godina" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="godina" id="inlineRadio3" value="option3">
+                    <label class="form-check-label" for="inlineRadio2">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="godina" id="inlineRadio4" value="option4">
+                    <label class="form-check-label" for="inlineRadio2">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="godina" id="inlineRadio5" value="option5">
+                    <label class="form-check-label" for="inlineRadio2">5</label>
+                </div>
+            </div>
+            <!-- Semestar -->
+            <div class="form-group">
+                <span>Semestar</span>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Semestar" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Zimski</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Semestar" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Ljetni</label>
+                </div>
+            </div>
+            <!-- Tip predmeta -->
+            <div class="form-group">
+                <span>Tip predmeta</span>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Tip" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Obavezni</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Tip" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Izborni</label>
+                </div>
+            </div>
+            <!-- profesor -->
+            <div class="form-group">
+                <label for="sel1">Profesor:</label>
+                <select class="form-control col-4" id="sel1">
+                    <option>profa 1</option>
+                    <option>profa 2</option>
+                    <option>profa 3</option>
+                    <option>profa 4</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-dark rounded">Submit</button>
+        </form>
+    </div>
+
+    <div class="forma container mt-5 p-5 rounded shadow-lg">
+        <form action="">
+            <h1 class="text-center">
+                Slanje notifikacije
+            </h1>
+
+            <div class="form-group">
+                <label for="naslov-notifikacije">Naslov notifikacije</label>
+                <input type="text" name="naslov-notrifikacije" id="naslov-notifikacije" class="form-control col-6">
+            </div>
+            <div class="form-group">
+                <label for="sadrzaj_notifikacije">Sadrzaj notifikacije:</label>
+                <textarea class="form-control" rows="5" id="sadrzaj_notifikacije"></textarea>
+            </div>
+            <div class="form-group">
+                <span>Notifikacija se salje: </span>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Studentima</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Profesorima</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Asistentima</label>
+                  </div>
+            </div>
+            <button type="submit" class="btn btn-dark rounded"> 
+                Posalji
+            </button>
+        </form>
+    </div>
+
+    <div class="forma container mt-5 p-5 shadow-lg">
+        <form action="">
+            <h2 class="text-center">
+                Kreiranje praznika
+            </h2>
+            <div class="form-group">
+                <label for="imePraznika">Ime praznika</label>
+                <input type="text" name="imePraznika" id="imePraznika" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="cestitka_prazika">Cestitka uz praznik:</label>
+                <textarea class="form-control" rows="5" id="cestitka_prazika"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="datumPraznika">Datum Praznika: </label>
+                <input type="date" name="datumPraznika" id="datumPraznika" class="form-control col-6">
+            </div>
+            <button type="submit" class="btn btn-dark rounded">Kreiraj</button>
+        </form>
+    </div>
+
+    <div class="forma container mt-5 p-5 shadow-lg">
+        <form action="">
+            <h2 class="text-center">
+                Kreiraj eksterni dogadjaj
+            </h2>
+            <div class="form-group">
+              <label for="imeDogadjaja">Ime dogadjaja</label>
+              <input type="text" name="imeDogadjaja" id="imeDogadjaja" class="form-control" placeholder="" aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+                <label for="opisDogadjaj">Opis dogadjaja: </label>
+                <textarea name="opisDogadjaja" id="opisDogadjaja" rows="5" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="datumDogadjaja">Datum Dogadjaja: </label>
+                <input type="date" name="datumDogadjaja" id="datumDogadjaja" class="form-control col-6">
+            </div>
+            <button type="submit" class="btn btn-dark rounded">Kreiraj</button>
+        </form>
+    </div>
+
+    <div class="forma container mt-5 p-5 shadow-lg">
+        <form action="">
+            <h2 class="text-center">
+                Upisivanje na predmet
+            </h2>
+            <!-- Smjer -->
+            <div class="form-group">
+
+                <span>Smjer    </span>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">RI</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">AiE</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                    <label class="form-check-label" for="inlineRadio2">TK</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                    <label class="form-check-label" for="inlineRadio2">EE</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                    <label class="form-check-label" for="inlineRadio2">RS</label>
+                </div>
+            </div>
+            <!-- Godina -->
+            <div class="form-group">                
+                <span>Godina</span>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="godina" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="godina" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="godina" id="inlineRadio3" value="option3">
+                    <label class="form-check-label" for="inlineRadio2">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="godina" id="inlineRadio4" value="option4">
+                    <label class="form-check-label" for="inlineRadio2">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="godina" id="inlineRadio5" value="option5">
+                    <label class="form-check-label" for="inlineRadio2">5</label>
+                </div>
+            </div>
+            <!-- Semestar -->
+            <div class="form-group">
+                <span>Semestar</span>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Semestar" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Zimski</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Semestar" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Ljetni</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="sel1">Predmet:</label>
+                <select class="form-control col-4" id="sel1">
+                    <option>predmet 1</option>
+                    <option>predmet 2</option>
+                    <option>predmet 3</option>
+                    <option>predmet 4</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="btn btn-dark rounded">Upisi</button>
+
+        </form>
+    </div>
+
+    <div class="forma container rounded mt-5 p-5 shadow-lg">
+        <form action="">
+            <h2 class="text-center">
+                Kreiranje aktivnosti
+            </h2>
+            <div class="form-group">
+
+                <span>Tip Aktivnosti    </span>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Predavanja</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Tutorijal/Lab</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                    <label class="form-check-label" for="inlineRadio2">Ispit</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                    <label class="form-check-label" for="inlineRadio2">Kviz</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                    <label class="form-check-label" for="inlineRadio2">Usmeni ispit</label>
+                </div>                
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option6">
+                    <label class="form-check-label" for="inlineRadio2">Nadoknada</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="nazivAktivnosti">Naziv Aktivnosti</label>
+                <input type="text" name="nazivAktivnosti" id="nazivAktivnosti" class="form-control col-6">
+            </div>
+            <div class="form-group">
+                <label for="opisaAktivnosti">Opis Aktivnosti</label>
+                <textarea name="opisaAktivnosti" id="opisaAktivnosti" rows="5" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="datumDogadjaja">Datum Aktivnosti: </label>
+                <input type="date" name="datumDogadjaja" id="datumDogadjaja" class="form-control col-4">
+            </div>
+            <div class="form-group">
+                <label for="vrijemeAktivnosti">Vrijeme Aktivnosti: </label>
+                <input type="text" name="vrijemeAktivnosti" id="vrijemeAktivnosti" class="form-control col-4">
+            </div>
+            <button class="btn btn-dark rounded" type="submit">Kreiraj</button>              
+            
+        </form>
+
+    </div>
+
+    <div class="forma container rounded mt-5 p-5 shadow-lg">
+        <form action="">
+            <h2 class="text-center">
+                Verifikacija studentskog predmeta
+            </h2>
+            <p><b>Ime i prezime</b> Seid Korac</p>
+            <p><b>Broj indeksa</b> 18553</p>
+            <p><b>Godina studija</b> 2</p>
+            <p><b>Smjer</b> RI</p>
+            <p><b>Predmet</b> OOAD</p>
+            <form action="">
+                <button type="submit" class="btn btn-dark rounded">Verificiraj</button>
+            </form>
+        </form>
+    </div>
+
+    <div class="forma container mt-5 p-5 shadow-lg">
+        <form action="">
+            <h2 class="text-center">
+                Kreiranje neradnog dana
+            </h2>
+            <div class="form-group">
+                <label for="imePraznika">Naslov:</label>
+                <input type="text" name="imePraznika" id="imePraznika" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="cestitka_prazika">Opis:</label>
+                <textarea class="form-control" rows="5" id="cestitka_prazika"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="datumPraznika">Datum: </label>
+                <input type="date" name="datumPraznika" id="datumPraznika" class="form-control col-6">
+            </div>
+            <button type="submit" class="btn btn-dark rounded">Kreiraj</button>
+        </form>
+    </div>
+
+    <div class="forma container rounded mt-5 p-5 shadow-lg">
+        <form action="">
+            <h2 class="text-center">
+                Dodavanje pristupa nastavnom osoblju
+            </h2>
+            <p><b>Predmet</b> OOAD <br></p>
+            <p><b>Profesor</b> Profesorov Profesorovich <br></p>
+            <div class="form-group">
+                <label for="sel1">Nastavno osoblje:</label>
+                <select class="form-control col-6" id="sel1" multiple>
+                    <option>assistent 1</option>
+                    <option>assistent 2</option>
+                    <option>assistent 3</option>
+                    <option>demonstrator 1</option>
+                </select>   
+            </div>
+
+            <button type="submit" class="btn btn-dark rounded">Dodaj</button>
+              
+        </form>
+    </div>
+
+    <div class="container mt-5 mb-5 p-5 shadow rounded">
+        <h2>
+            Napomena
+        </h2>
+        <p>
+            Odabir laboratorijskih grupa, slanje zahtjeva za zamjenu grupe i kreiranje i objava radne verzije rasporeda ce se najvjerovatnije raditi kroz GUI pa je suvisno praviti forme za te funkcionalnosti.
+        </p>
+    </div>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+
+<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-*.min.js"></script>
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
