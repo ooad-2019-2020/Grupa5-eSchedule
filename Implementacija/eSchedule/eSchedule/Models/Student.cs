@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace eSchedule.Models
 {
-    public class Profesor : Korisnik
+    public class Student : Korisnik
     {
-        private string profesorId;
+        private string brojIndeksa;
 
-        public Profesor(string id, string korisnickoIme, string lozinka, string ime, string prezime, string jmbg, string eMail, string profesorId)
+        public Student(string id, string korisnickoIme, string lozinka, string ime, string prezime, string jmbg, string eMail, string brojIndeksa)
         {
             this.id = id;
             this.korisnickoIme = korisnickoIme;
@@ -18,7 +18,7 @@ namespace eSchedule.Models
             this.prezime = prezime;
             this.jmbg = jmbg;
             this.eMail = eMail;
-            this.profesorId = profesorId;
+            this.brojIndeksa = brojIndeksa;
         }
 
         public override string getEMail()
@@ -116,40 +116,17 @@ namespace eSchedule.Models
             this.notifikacije = notifikacije;
         }
 
-
-        public string getProfesorId()
+        public string getBrojIndeksa()
         {
-            return profesorId;
+            return brojIndeksa;
         }
 
-        public void setProfesorId(string profesorId)
+        public void setBrojIndeksa(string brojIndeksa)
         {
-            this.profesorId = profesorId;
+            this.brojIndeksa = brojIndeksa;
         }
 
-        public void kreirajLaboratorijskuGrupu(string id, string naziv, Predmet predmet, int maksimalniKapacitet)
-        {
-            //LaboratorijskaGrupaa
-        }
 
-        public void kreirajAktivnost()
-        {
 
-        }
-
-        public void unesiPrisustvo()
-        {
-
-        }
-
-        public void dodijeliPravoPristupa()
-        {
-
-        }
-
-        public void pomjeriPredavanje()
-        {
-
-        }
     }
 }

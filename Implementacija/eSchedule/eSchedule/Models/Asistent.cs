@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace eSchedule.Models
 {
-    public class Profesor : Korisnik
+    public class Asistent : Korisnik
     {
-        private string profesorId;
+        private string asistentId;
 
-        public Profesor(string id, string korisnickoIme, string lozinka, string ime, string prezime, string jmbg, string eMail, string profesorId)
+        public Asistent(string id, string korisnickoIme, string lozinka, string ime, string prezime, string jmbg, string eMail, string asistentId)
         {
             this.id = id;
             this.korisnickoIme = korisnickoIme;
@@ -18,7 +18,7 @@ namespace eSchedule.Models
             this.prezime = prezime;
             this.jmbg = jmbg;
             this.eMail = eMail;
-            this.profesorId = profesorId;
+            this.asistentId = asistentId;
         }
 
         public override string getEMail()
@@ -116,25 +116,14 @@ namespace eSchedule.Models
             this.notifikacije = notifikacije;
         }
 
-
-        public string getProfesorId()
+        public string getAsistentId()
         {
-            return profesorId;
+            return asistentId;
         }
 
-        public void setProfesorId(string profesorId)
+        public void setAsistentId(string asistentId)
         {
-            this.profesorId = profesorId;
-        }
-
-        public void kreirajLaboratorijskuGrupu(string id, string naziv, Predmet predmet, int maksimalniKapacitet)
-        {
-            //LaboratorijskaGrupaa
-        }
-
-        public void kreirajAktivnost()
-        {
-
+            this.asistentId = asistentId;
         }
 
         public void unesiPrisustvo()
@@ -142,12 +131,12 @@ namespace eSchedule.Models
 
         }
 
-        public void dodijeliPravoPristupa()
+        public void pomjeriVjezbe()
         {
 
         }
 
-        public void pomjeriPredavanje()
+        public void dodajULaboratorijskuGrupu()
         {
 
         }
